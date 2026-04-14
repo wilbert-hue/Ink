@@ -416,6 +416,18 @@ export default function DashboardPage() {
                             👤 Customer Intelligence
                           </button>
                         )}
+                        {isChartVisible('customer-intelligence-tables') && (
+                          <button
+                            onClick={() => setActiveTab('customer-intelligence-tables')}
+                            className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
+                              activeTab === 'customer-intelligence-tables'
+                                ? 'border-blue-500 text-blue-600'
+                                : 'border-transparent text-black hover:text-black hover:border-gray-300'
+                            }`}
+                          >
+                            📊 Customer CI Database
+                          </button>
+                        )}
                       </>
                     )}
                   </nav>
@@ -529,6 +541,12 @@ export default function DashboardPage() {
                           title="Customer Intelligence Database"
                           height={600}
                         />
+                      </div>
+                    )}
+
+                    {activeTab === 'customer-intelligence-tables' && (
+                      <div id="customer-intelligence-tables-chart">
+                        <CustomerIntelligenceTables />
                       </div>
                     )}
                   </>
