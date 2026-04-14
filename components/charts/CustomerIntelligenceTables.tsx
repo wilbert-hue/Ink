@@ -14,27 +14,27 @@ interface PropositionTableRow {
 }
 
 const PROPOSITION_1_DATA: PropositionTableRow[] = [
-  { id: '1', company: 'Flexo Solutions Ltd', location: 'North America', machineType: 'EB-Curable', inkType: 'Water-Based', capacity: 'High', growthPotential: 'High', decision: 'Engage' },
-  { id: '2', company: 'Printing Innovations', location: 'Europe', machineType: 'Hybrid', inkType: 'Solvent-Based', capacity: 'Medium', growthPotential: 'Medium', decision: 'Contact' },
-  { id: '3', company: 'Global Print Works', location: 'Asia Pacific', machineType: 'UV-Curable', inkType: 'EB-Curable', capacity: 'High', growthPotential: 'High', decision: 'Engage' },
-  { id: '4', company: 'Regional Packaging Co', location: 'Latin America', machineType: 'Conventional', inkType: 'Water-Based', capacity: 'Low', growthPotential: 'Medium', decision: 'Monitor' },
-  { id: '5', company: 'Advanced Print Tech', location: 'Middle East', machineType: 'EB-Curable', inkType: 'Hybrid', capacity: 'High', growthPotential: 'High', decision: 'Engage' },
+  { id: '1', company: 'Eastman Kodak Company', location: 'USA', machineType: 'Flexographic', inkType: 'EB-Curable', capacity: '1,500 m/min', growthPotential: 'Very High', decision: 'Strategic' },
+  { id: '2', company: 'Flint Group', location: 'Germany', machineType: 'Flexographic', inkType: 'EB-Curable', capacity: '1,200 m/min', growthPotential: 'Very High', decision: 'Strategic' },
+  { id: '3', company: 'Toyo Ink SC Holdings', location: 'Japan', machineType: 'Flexographic', inkType: 'Water-Based', capacity: '900 m/min', growthPotential: 'High', decision: 'Engage' },
+  { id: '4', company: 'Sun Chemical Corporation', location: 'USA', machineType: 'Flexographic', inkType: 'Solvent-Based', capacity: '1,000 m/min', growthPotential: 'High', decision: 'Engage' },
+  { id: '5', company: 'Siegwerk Group', location: 'Germany', machineType: 'Flexographic', inkType: 'EB-Curable', capacity: '1,100 m/min', growthPotential: 'Very High', decision: 'Strategic' },
 ]
 
 const PROPOSITION_2_DATA: PropositionTableRow[] = [
-  { id: '1', company: 'Environmental Prints', location: 'Europe', machineType: 'Water-Based', inkType: 'Eco-Friendly', capacity: 'Medium', growthPotential: 'Very High', decision: 'Priority' },
-  { id: '2', company: 'Sustainable Packaging', location: 'North America', machineType: 'EB-Curable', inkType: 'Water-Based', capacity: 'High', growthPotential: 'Very High', decision: 'Priority' },
-  { id: '3', company: 'Green Solutions Inc', location: 'Asia Pacific', machineType: 'Hybrid', inkType: 'Water-Based', capacity: 'Medium', growthPotential: 'High', decision: 'Engage' },
-  { id: '4', company: 'Quality Print Systems', location: 'Europe', machineType: 'EB-Curable', inkType: 'Hybrid', capacity: 'High', growthPotential: 'High', decision: 'Engage' },
-  { id: '5', company: 'Tech Packaging Ltd', location: 'North America', machineType: 'Hybrid', inkType: 'Solvent-Based', capacity: 'Medium', growthPotential: 'Medium', decision: 'Contact' },
+  { id: '1', company: 'Huhtamaki Oyj', location: 'Finland', machineType: 'Flexographic', inkType: 'Water-Based', capacity: '800 m/min', growthPotential: 'Very High', decision: 'Engage' },
+  { id: '2', company: 'Berry Global Group', location: 'USA', machineType: 'Flexographic', inkType: 'EB-Curable', capacity: '1,100 m/min', growthPotential: 'Very High', decision: 'Strategic' },
+  { id: '3', company: 'Constantia Flexibles', location: 'Austria', machineType: 'Flexographic', inkType: 'Solvent-Based', capacity: '900 m/min', growthPotential: 'High', decision: 'Engage' },
+  { id: '4', company: 'Uflex Limited', location: 'India', machineType: 'Flexographic', inkType: 'Water-Based', capacity: '700 m/min', growthPotential: 'Very High', decision: 'Strategic' },
+  { id: '5', company: 'Sappi Fine Papers', location: 'South Africa', machineType: 'Flexographic', inkType: 'EB-Curable', capacity: '850 m/min', growthPotential: 'High', decision: 'Engage' },
 ]
 
 const PROPOSITION_3_DATA: PropositionTableRow[] = [
-  { id: '1', company: 'Digital Print Experts', location: 'North America', machineType: 'EB-Curable', inkType: 'EB-Curable', capacity: 'High', growthPotential: 'Very High', decision: 'Strategic Partner' },
-  { id: '2', company: 'Innovation Printing', location: 'Europe', machineType: 'Hybrid', inkType: 'Hybrid', capacity: 'High', growthPotential: 'Very High', decision: 'Strategic Partner' },
-  { id: '3', company: 'Future Print Solutions', location: 'Asia Pacific', machineType: 'EB-Curable', inkType: 'Water-Based', capacity: 'High', growthPotential: 'Very High', decision: 'Strategic Partner' },
-  { id: '4', company: 'Premium Packaging', location: 'Europe', machineType: 'Water-Based', inkType: 'EB-Curable', capacity: 'Medium', growthPotential: 'High', decision: 'Engage' },
-  { id: '5', company: 'Performance Prints', location: 'North America', machineType: 'Hybrid', inkType: 'Solvent-Based', capacity: 'High', growthPotential: 'High', decision: 'Engage' },
+  { id: '1', company: 'Mayr-Melnhof Packaging', location: 'Austria', machineType: 'Flexographic', inkType: 'EB-Curable', capacity: '1,300 m/min', growthPotential: 'Very High', decision: 'Strategic' },
+  { id: '2', company: 'Stanpac Inc', location: 'Canada', machineType: 'Flexographic', inkType: 'Hybrid', capacity: '1,000 m/min', growthPotential: 'High', decision: 'Engage' },
+  { id: '3', company: 'Coverprint AG', location: 'Switzerland', machineType: 'Flexographic', inkType: 'EB-Curable', capacity: '1,150 m/min', growthPotential: 'Very High', decision: 'Strategic' },
+  { id: '4', company: 'Pollex Printing', location: 'UK', machineType: 'Flexographic', inkType: 'Water-Based', capacity: '950 m/min', growthPotential: 'High', decision: 'Engage' },
+  { id: '5', company: 'Graficryl International', location: 'Mexico', machineType: 'Flexographic', inkType: 'Solvent-Based', capacity: '850 m/min', growthPotential: 'High', decision: 'Engage' },
 ]
 
 interface PropositionProps {
@@ -59,9 +59,9 @@ function PropositionTable({ title, description, data }: PropositionProps) {
               <th className="px-4 py-3 text-left font-semibold">Location</th>
               <th className="px-4 py-3 text-left font-semibold">Machine Type</th>
               <th className="px-4 py-3 text-left font-semibold">Ink Type</th>
-              <th className="px-4 py-3 text-left font-semibold">Capacity</th>
+              <th className="px-4 py-3 text-left font-semibold">Speed (m/min)</th>
               <th className="px-4 py-3 text-left font-semibold">Growth Potential</th>
-              <th className="px-4 py-3 text-left font-semibold">Action</th>
+              <th className="px-4 py-3 text-left font-semibold">Decision</th>
             </tr>
           </thead>
           <tbody>
@@ -74,15 +74,7 @@ function PropositionTable({ title, description, data }: PropositionProps) {
                 <td className="px-4 py-3 text-gray-700">{row.location}</td>
                 <td className="px-4 py-3 text-gray-700">{row.machineType}</td>
                 <td className="px-4 py-3 text-gray-700">{row.inkType}</td>
-                <td className="px-4 py-3">
-                  <span className={`px-2 py-1 rounded text-xs font-semibold ${
-                    row.capacity === 'High' ? 'bg-green-100 text-green-800' : 
-                    row.capacity === 'Medium' ? 'bg-yellow-100 text-yellow-800' : 
-                    'bg-gray-100 text-gray-800'
-                  }`}>
-                    {row.capacity}
-                  </span>
-                </td>
+                <td className="px-4 py-3 text-gray-700 font-semibold">{row.capacity}</td>
                 <td className="px-4 py-3">
                   <span className={`px-2 py-1 rounded text-xs font-semibold ${
                     row.growthPotential === 'Very High' ? 'bg-purple-100 text-purple-800' :
@@ -94,10 +86,8 @@ function PropositionTable({ title, description, data }: PropositionProps) {
                 </td>
                 <td className="px-4 py-3">
                   <span className={`px-2 py-1 rounded text-xs font-semibold ${
-                    row.decision === 'Strategic Partner' ? 'bg-indigo-100 text-indigo-800' :
-                    row.decision === 'Priority' ? 'bg-red-100 text-red-800' :
+                    row.decision === 'Strategic' ? 'bg-indigo-100 text-indigo-800' :
                     row.decision === 'Engage' ? 'bg-green-100 text-green-800' :
-                    row.decision === 'Contact' ? 'bg-orange-100 text-orange-800' :
                     'bg-gray-100 text-gray-800'
                   }`}>
                     {row.decision}
@@ -145,8 +135,8 @@ export function CustomerIntelligenceTables() {
       {/* Proposition 1: Market Entry Strategy */}
       {activeProposition === 1 && (
         <PropositionTable
-          title="Proposition 1: Market Entry Strategy"
-          description="Focus on high-capacity manufacturers with strong growth potential. Primary targets for initial market penetration and customer acquisition."
+          title="Proposition 1: Premium Ink Suppliers"
+          description="Leading global ink manufacturers with high-speed flexographic capabilities (900-1,500 m/min). Strategic focus on top-tier EB-curable ink suppliers."
           data={PROPOSITION_1_DATA}
         />
       )}
@@ -154,8 +144,8 @@ export function CustomerIntelligenceTables() {
       {/* Proposition 2: Sustainability Leaders */}
       {activeProposition === 2 && (
         <PropositionTable
-          title="Proposition 2: Sustainability Leaders"
-          description="Target environmentally-conscious manufacturers using water-based and eco-friendly inks. High growth potential in sustainable printing segment."
+          title="Proposition 2: Sustainable Packaging Converters"
+          description="Fast-growing converters adopting water-based and eco-friendly inks. High growth potential with sustainability focus in food, beverage, and flexible packaging."
           data={PROPOSITION_2_DATA}
         />
       )}
@@ -163,8 +153,8 @@ export function CustomerIntelligenceTables() {
       {/* Proposition 3: Strategic Partnerships */}
       {activeProposition === 3 && (
         <PropositionTable
-          title="Proposition 3: Strategic Partnerships"
-          description="High-value account partnerships with advanced technology adopters. Focus on long-term relationships and joint innovation initiatives."
+          title="Proposition 3: High-Speed Technology Leaders"
+          description="Advanced flexographic printers with 800+ m/min speeds using hybrid and EB-curable inks. Partners for advanced technology integration and co-development."
           data={PROPOSITION_3_DATA}
         />
       )}
