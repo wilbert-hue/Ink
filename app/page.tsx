@@ -15,6 +15,7 @@ import { CompetitiveIntelligence } from '@/components/charts/CompetitiveIntellig
 import CustomerIntelligenceHeatmap from '@/components/charts/CustomerIntelligenceHeatmap'
 import DistributorsIntelligence from '@/components/charts/DistributorsIntelligenceTable'
 import CustomerIntelligenceDatabase from '@/components/charts/CustomerIntelligenceDatabase'
+import { CustomerIntelligenceTables } from '@/components/charts/CustomerIntelligenceTables'
 import { InsightsPanel } from '@/components/InsightsPanel'
 import { FilterPresets } from '@/components/filters/FilterPresets'
 import { ChartGroupSelector } from '@/components/filters/ChartGroupSelector'
@@ -31,7 +32,7 @@ export default function DashboardPage() {
   const { setData, setLoading, setError, data, isLoading, error, filters, selectedChartGroup, dashboardName } = useDashboardStore()
   const [mounted, setMounted] = useState(false)
   const [hasCheckedStore, setHasCheckedStore] = useState(false)
-  const [activeTab, setActiveTab] = useState<'bar' | 'line' | 'heatmap' | 'table' | 'waterfall' | 'bubble' | 'competitive-intelligence' | 'customer-intelligence' | 'customer-intelligence-database'>('bar')
+  const [activeTab, setActiveTab] = useState<'bar' | 'line' | 'heatmap' | 'table' | 'waterfall' | 'bubble' | 'competitive-intelligence' | 'customer-intelligence' | 'customer-intelligence-database' | 'customer-intelligence-tables'>('bar')
   const [showInsights, setShowInsights] = useState(false)
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
   const [viewMode, setViewMode] = useState<'tabs' | 'vertical'>('tabs')
@@ -55,7 +56,8 @@ export default function DashboardPage() {
     'bubble': 'bubble',
     'competitive-intelligence': 'competitive-intelligence',
     'customer-intelligence': 'customer-intelligence',
-    'customer-intelligence-database': 'customer-intelligence-database'
+    'customer-intelligence-database': 'customer-intelligence-database',
+    'customer-intelligence-tables': 'customer-intelligence-tables'
   }
 
   // Auto-switch to first available tab when chart group changes
@@ -414,6 +416,16 @@ export default function DashboardPage() {
                             👤 Customer Intelligence
                           </button>
                         )}
+                        <button
+                          onClick={() => setActiveTab('customer-intelligence-tables')}
+                          className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
+                            activeTab === 'customer-intelligence-tables'
+                              ? 'border-blue-500 text-blue-600'
+                              : 'border-transparent text-black hover:text-black hover:border-gray-300'
+                          }`}
+                        >
+                          📊 Customer CI Database
+                        </button>
                       </>
                     )}
                   </nav>
@@ -527,6 +539,12 @@ export default function DashboardPage() {
                           title="Customer Intelligence Database"
                           height={600}
                         />
+                      </div>
+                    )}
+
+                    {activeTab === 'customer-intelligence-tables' && (
+                      <div id="customer-intelligence-tables-chart">
+                        <CustomerIntelligenceTables />
                       </div>
                     )}
                   </>
