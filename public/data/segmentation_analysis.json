@@ -1,28 +1,37 @@
 {
   "Global": {
-    "By Type": {
-      "Sub-Normothermic Perfusion (20–34°C)": {},
-      "Warm or Normothermic Perfusion (35–37°C)": {}
+    "By Web Width": {
+      "Up to 1,000 mm": {},
+      "1,001–1,300 mm": {},
+      "1,301–1,700 mm": {},
+      "Above 1,700 mm": {}
     },
-    "By Organ Type": {
-      "Liver": {},
-      "Heart": {},
-      "Lung": {},
-      "Kidney": {},
-      "Others (Pancreas, Small bowel / Intestine, Composite Tissues / Limb Perfusion (emerging use cases))": {}
+    "By Ink / Curing System": {
+      "EB-Curable Ink Systems": {},
+      "Water-Based Ink Systems": {},
+      "Solvent-Based Ink Systems": {},
+      "Hybrid / Multi-Chemistry Systems": {}
     },
-    "Application / Use Case": {
-      "Organ Preservation": {},
-      "Viability Assessment": {},
-      "Physiologic Transport": {},
-      "Reconditioning Marginal Organs": {},
-      "Others (Research Use / Protocol development)": {}
+    "By Speed Class": {
+      "Up to 300 m/min": {},
+      "301–500 m/min": {},
+      "Above 500 m/min": {}
     },
-    "By End User": {
-      "Hospitals & Clinics": {},
-      "Specialty Clinic/Centers": {},
-      "Transplant Centers": {},
-      "Others (Research Institutes/Centers, Organ Procurement Organizations, etc.)": {}
+    "By Primary Print Surface": {
+      "Polyolefin Films": {},
+      "Polyester and Nylon Films": {},
+      "Paper-Based Webs": {},
+      "Foil-Based Webs": {},
+      "Nonwoven Webs": {},
+      "Others (Cellulosic Films, Coated Specialty Webs)": {}
+    },
+    "By End-Use Industry": {
+      "Food and Beverage": {},
+      "Personal Care and Cosmetics": {},
+      "Household Products": {},
+      "Pharmaceutical and Medical": {},
+      "Industrial and Chemical": {},
+      "Others (Pet Care, Tobacco, Agriculture)": {}
     },
     "By Region": {
       "North America": {
