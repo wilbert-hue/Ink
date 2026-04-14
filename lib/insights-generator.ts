@@ -23,7 +23,7 @@ export function generateInsights(
   records: DataRecord[],
   filters: FilterState,
   currency: 'USD' | 'INR' = 'USD',
-  volumeUnit: string = 'Million Units'
+  volumeUnit: string = 'Units'
 ): Insight[] {
   const insights: Insight[] = []
   
